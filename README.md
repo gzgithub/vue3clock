@@ -24,3 +24,10 @@ npm run preview  # 預覽打包結果
 ```
 
 `vite.config.js` 設定了 `base: './'`，`dist/` 可直接部署到 GitHub Pages 或任何靜態主機的子路徑。
+
+## 部署（GitHub Pages）
+
+推送到 `main` 時，`.github/workflows/deploy.yml` 會自動建置並發佈到 GitHub Pages：
+
+1. 到 repo 的 **Settings → Pages**，將 **Source** 設為 **GitHub Actions**（只需設定一次）。
+2. 合併到 `main` 後，網址為 <https://gzgithub.github.io/vue3clock/>。
